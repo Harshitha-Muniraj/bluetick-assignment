@@ -1,0 +1,128 @@
+.contact-card{
+    
+     border: 2px solid grey;
+    display: flex;
+    transition: all 0.9s;
+}
+
+.contact{
+    max-width: 63rem;
+    margin: 0 auto;
+    padding: 2rem;
+    color: white;
+     
+}
+.cnt-form{
+    max-width: 40rem;
+    margin: 0 auto;
+    width: 50%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    max-width: 30rem;
+    gap: 20px;
+    padding: 3rem;
+}
+input:focus{
+    outline: 2px solid black;
+    border:none
+}
+input,button,textarea{
+    max-width: 20rem;
+    height: 2.1rem;
+    border-radius: 6px;
+    max-width: 20rem;
+    width:100%;
+    outline: 2px solid #2e73e5;
+    border:none
+}
+textarea{
+    height: 4rem;
+}
+.otherContact-details{
+    background-color: #2e73e5;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  
+    align-items: center;
+  
+    padding: 3rem;
+    gap: 30px;
+    
+}
+
+.mob-mail{
+    display: flex;
+    flex-direction: column;
+    gap: 1.9rem;
+    z-index: -9;
+}
+.contact button{
+    background-color: #2e73e5;
+    
+    border: none;
+    color: white;
+    font-size: 1.3rem;
+    padding: 4px;
+}
+.contact button:hover{
+   
+        box-shadow: 0 2px 4px grey;
+        background-color: blue;
+    
+}
+::placeholder{
+    font-size: 1.1rem;
+    padding: 7px;
+    color: gray;
+}
+.cnt-head{
+    font-size: 3.5rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width:800px){
+    input,button{
+        height: 3rem;
+        width: 100%;
+    }
+    ::placeholder{
+        font-size: 1.1rem;
+    padding: 7px;
+    color: gray;
+    }
+    textarea{
+        height: 4.5rem;
+    }
+    .otherContact-details{
+        align-items: flex-start;
+    }
+    .small{
+        display: flex;
+        gap: 20px;
+    }
+    
+     
+}
+@media (max-width:31.25rem){
+    .contact-card{
+        flex-direction: column;
+    }
+    .cnt-form,.otherContact-details{
+        align-items: center;
+        width: 100%;
+        max-width: 40rem;
+        padding: 2rem;
+    }
+    input,button,textarea{
+        max-width: 30rem;
+    }
+    input,button{
+        height: 3.3rem ;
+    }
+}

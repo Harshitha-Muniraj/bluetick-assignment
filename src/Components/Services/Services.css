@@ -1,0 +1,42 @@
+.services{
+    margin: 10% auto;
+    width: 80%;
+}
+.abt-details{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 45px;
+    
+    
+}
+.services h2{
+    font-size: 2.2rem;
+    text-align: center;
+    padding: 2rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: #2e73e5;
+}
+.num{
+    font-family: 'Monoton';
+    font-size: 40px;
+    color: #2e73e5;
+}
+.box{
+    display: grid;
+    grid-template-columns: 1fr 3.5fr;
+    gap: 15px;
+}
+.box-matter{
+    display: grid;
+    gap: 20px;
+}
+.box-write{
+    color: #a1a0a0;
+}
+@media(max-width:700px){
+    .abt-details{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

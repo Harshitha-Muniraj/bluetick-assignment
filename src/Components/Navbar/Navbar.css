@@ -1,0 +1,106 @@
+.navbar{
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-between;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: #2e73e5;
+    box-shadow: 0 2px 4px #3f51b5;
+}
+.navbar button{
+    padding: 0;
+}
+.navlist{
+    display: flex;
+    gap: 30px;
+}
+h1{
+    font-size: 1.7rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.navitem a:hover,.navitem a.active ,a:active{
+  color: rgb(195, 195, 192);
+   padding-bottom: 6px;
+   border-bottom: 2px solid white;
+   transition:2s ease-in; 
+          
+        
+}
+#logo{
+    font-size: 2.5rem;
+}
+.btn-mobile-nav{
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: none;
+    
+}
+#icon-mobile-nav{
+    height: 4.8rem;
+    width: 4.8rem;
+    color: white;
+   
+}
+#icon-mobile-nav[name='close-outline']{
+    display: none;
+}
+.navitem{
+    cursor: pointer;
+}
+@media (max-width:50rem){
+    html {
+        font-size: 62.5%;
+    }
+    body {
+        font-size: 1.6rem;
+    }
+    .navbar{
+        padding: 2rem 0rem;
+        width: 90%;
+    }
+    .btn-mobile-nav{
+        display: block;
+        display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    }
+    .navlist{
+        background-color: black;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        flex-direction: column;
+        /* transform: translateX(100%); */
+        transition: all 0.5s ease-in;
+        /* z-index: 9; */
+    }
+    .resp-hide{
+        display: none;
+        z-index: 999;
+    }
+    /* .navlist{
+        opacity: 1;
+        visibility: visible;
+    } */
+    /* .nav-open #icon-mobile-nav[name='close-outline']{
+        display: block;
+    }
+    .nav-open #icon-mobile-nav[name='menu-outline']{
+        display: none;
+    } */
+}
